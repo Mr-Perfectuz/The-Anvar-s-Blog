@@ -16,6 +16,7 @@ const Create = () => {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(blog)
     }).then(() => {
+      // history.go(-1);
       history.push('/');
     })
   }
